@@ -42,20 +42,32 @@ export default function Navigation() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <button 
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="flex items-center gap-2"
+            <button
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                className="flex items-center gap-6"
             >
-              <div className={`w-10 h-10 rounded-lg flex items-center justify-center transition-colors ${
-                isScrolled ? 'bg-blue-600' : 'bg-white/20 backdrop-blur-sm'
-              }`}>
-                <Wifi className={`w-6 h-6 ${isScrolled ? 'text-white' : 'text-white'}`} />
+
+              {/* Grupo 1: Logos */}
+              <div className="flex items-center gap-2">
+                <img src="/ati.png" alt="ATI" className="h-6 md:h-7 w-auto object-contain" />
+                <img src="/logo.png" alt="TO na Net" className="h-6 md:h-7 w-auto object-contain" />
               </div>
-              <span className={`text-xl font-bold transition-colors ${
-                isScrolled ? 'text-slate-900' : 'text-white'
-              }`}>
-                TO na <span className="text-blue-500">Net</span>
-              </span>
+
+              {/* Grupo 2: Ícone + Texto */}
+              <div className="flex items-center gap-3">
+                <div className={`w-10 h-10 rounded-lg flex items-center justify-center transition-colors ${
+                    isScrolled ? 'bg-blue-600' : 'bg-white/20 backdrop-blur-sm'
+                }`}>
+                  <Wifi className="w-6 h-6 text-white" />
+                </div>
+
+                <span className={`text-xl font-bold transition-colors ${
+                    isScrolled ? 'text-slate-900' : 'text-white'
+                }`}>
+      TO na <span className="text-blue-500">Net</span>
+    </span>
+              </div>
+
             </button>
 
             {/* Desktop Navigation */}

@@ -139,48 +139,6 @@ export default function Comunidades() {
               ))}
             </div>
           </div>
-
-          {/* Coverage Info */}
-          <div className="bg-indigo-900 rounded-2xl p-8 text-white">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h3 className="text-2xl font-bold mb-4">Cobertura do Programa</h3>
-                <p className="text-indigo-200 mb-6">
-                  O TO NA NET tem como meta atingir 612 comunidades tradicionais do Tocantins,
-                  incluindo aldeias indígenas, quilombos e povoados rurais, levando conectividade
-                  gratuita a áreas historicamente desassistidas.
-                </p>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-white/10 rounded-lg p-4">
-                    <div className="text-3xl font-bold text-indigo-300">612</div>
-                    <div className="text-sm text-indigo-200">Comunidades Meta</div>
-                  </div>
-                  <div className="bg-white/10 rounded-lg p-4">
-                    <div className="text-3xl font-bold text-indigo-300">350</div>
-                    <div className="text-sm text-indigo-200">Acessos Simultâneos/Tóten</div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white/10 rounded-xl p-6">
-                <h4 className="font-semibold mb-4">Público Beneficiado:</h4>
-                <ul className="space-y-2 text-indigo-200">
-                  {[
-                    'Comunidades indígenas (aldeias)',
-                    'Comunidades quilombolas',
-                    'Povoados rurais isolados',
-                    'Áreas de baixa renda sem cobertura',
-                    'Escolas estaduais rurais',
-                    'Postos de saúde e bases ambientais',
-                  ].map((item, i) => (
-                      <li key={i} className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-indigo-400 rounded-full" />
-                        {item}
-                      </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
   );

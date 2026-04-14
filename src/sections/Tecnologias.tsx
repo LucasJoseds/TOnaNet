@@ -1,4 +1,4 @@
-import { Wifi, Satellite, Radio, Zap, CheckCircle, Shield } from 'lucide-react';
+import { Wifi, Satellite, Radio, Zap, CheckCircle, Shield, Signal } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const tecnologias = [
@@ -55,15 +55,34 @@ const tecnologias = [
       'Suporte técnico contínuo'
     ],
     aplicacao: 'Cidadãos em situação de vulnerabilidade social em localidades sem cobertura de operadoras. Concessão mediante cadastro prévio e validação socioeconômica, territorial e tecnológica.'
+  },
+  {
+    id: '5g',
+    eixo: 'Eixo 04',
+    titulo: '5G',
+    subtitulo: 'Iniciativa Federal Articulada',
+    icone: Signal,
+    cor: 'orange',
+    imagem: '/5g.jpg',
+    descricao: 'Expansão do 5G articulada pela ATI-TO junto à Anatel e ao Ministério das Comunicações, garantindo que o Tocantins fosse incluído nas obrigações de cobertura do edital nacional.',
+    especificacoes: [
+      '54 novos municípios com cobertura 5G',
+      '356 mil novos moradores beneficiados',
+      'Tocantins 100% liberado na faixa 3,5 GHz',
+      'Impulso à inovação e cidades inteligentes',
+      'Serviços públicos digitais avançados'
+    ],
+    aplicacao: 'Centros urbanos do Tocantins, impulsionando inovação, competitividade empresarial, atração de investimentos e modernização dos serviços públicos digitais.'
   }
 ];
 
 export default function Tecnologias() {
   const getColorClass = (cor: string) => {
     const colors: Record<string, { bg: string; text: string; border: string; light: string; eixoBg: string; eixoText: string }> = {
-      green: { bg: 'bg-green-600', text: 'text-green-600', border: 'border-green-200', light: 'bg-green-50', eixoBg: 'bg-green-100', eixoText: 'text-green-800' },
+      green:  { bg: 'bg-green-600',  text: 'text-green-600',  border: 'border-green-200',  light: 'bg-green-50',  eixoBg: 'bg-green-100',  eixoText: 'text-green-800'  },
       purple: { bg: 'bg-purple-600', text: 'text-purple-600', border: 'border-purple-200', light: 'bg-purple-50', eixoBg: 'bg-purple-100', eixoText: 'text-purple-800' },
-      blue: { bg: 'bg-blue-600', text: 'text-blue-600', border: 'border-blue-200', light: 'bg-blue-50', eixoBg: 'bg-blue-100', eixoText: 'text-blue-800' }
+      blue:   { bg: 'bg-blue-600',   text: 'text-blue-600',   border: 'border-blue-200',   light: 'bg-blue-50',   eixoBg: 'bg-blue-100',   eixoText: 'text-blue-800'   },
+      orange: { bg: 'bg-orange-500', text: 'text-orange-600', border: 'border-orange-200', light: 'bg-orange-50', eixoBg: 'bg-orange-100', eixoText: 'text-orange-800' }
     };
     return colors[cor] || colors.blue;
   };
@@ -71,6 +90,7 @@ export default function Tecnologias() {
   return (
       <section id="tecnologias" className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+
           {/* Section Header */}
           <div className="text-center mb-16">
           <span className="inline-block bg-purple-100 text-purple-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
@@ -81,7 +101,7 @@ export default function Tecnologias() {
             </h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
               O TO NA NET adota uma abordagem multitecnológica, pois não existe uma única tecnologia
-              capaz de atender todo o território tocantinense. São três eixos complementares, cada um
+              capaz de atender todo o território tocantinense. São quatro eixos complementares, cada um
               desenhado para um tipo específico de território e público.
             </p>
           </div>
@@ -97,7 +117,7 @@ export default function Tecnologias() {
                 { territorio: 'Povoados com viabilidade de fibra', tecnologia: 'Wi-Fi Comunitário', eixo: 'Eixo 01', cor: 'text-green-700 bg-green-100' },
                 { territorio: 'Áreas rurais isoladas e comunidades indígenas', tecnologia: 'Satélite LEO', eixo: 'Eixo 02', cor: 'text-purple-700 bg-purple-100' },
                 { territorio: 'Cidadãos vulneráveis sem cobertura de operadoras', tecnologia: 'LTE (4G) Individualizado', eixo: 'Eixo 03', cor: 'text-blue-700 bg-blue-100' },
-                { territorio: 'Centros urbanos', tecnologia: '5G', eixo: 'Iniciativa Federal', cor: 'text-orange-700 bg-orange-100' },
+                { territorio: 'Centros urbanos', tecnologia: '5G', eixo: 'Eixo 04', cor: 'text-orange-700 bg-orange-100' },
               ].map((row, i) => (
                   <div key={i} className="grid grid-cols-3 px-6 py-4 items-center">
                     <span className="text-sm text-slate-700">{row.territorio}</span>
@@ -108,64 +128,65 @@ export default function Tecnologias() {
             </div>
           </div>
 
-          {/* Technologies Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Technologies Grid — 2 colunas na primeira linha, 2 na segunda */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {tecnologias.map((tech) => {
               const colors = getColorClass(tech.cor);
               const Icone = tech.icone;
 
               return (
-                  <Card key={tech.id} className={`overflow-hidden border-2 ${colors.border} hover:shadow-2xl transition-all duration-300 hover:-translate-y-1`}>
-                    {/* Image */}
-                    <div className="relative h-48 overflow-hidden">
+                  <Card
+                      key={tech.id}
+                      className={`overflow-hidden border-2 ${colors.border} hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col`}
+                  >
+                    {/* Image — altura fixa com overflow hidden para cortar sem deixar espaço vazio */}
+                    <div className="relative w-full h-44 shrink-0 overflow-hidden">
                       <img
                           src={tech.imagem}
                           alt={tech.titulo}
-                          className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                       />
-                      <div className="absolute top-4 left-4">
+                      <div className="absolute top-3 left-3">
                     <span className={`text-xs px-2 py-1 rounded-full font-semibold ${colors.eixoBg} ${colors.eixoText}`}>
                       {tech.eixo}
                     </span>
                       </div>
-                      <div className={`absolute top-4 right-4 ${colors.bg} text-white p-2 rounded-full`}>
-                        <Icone className="w-6 h-6" />
+                      <div className={`absolute top-3 right-3 ${colors.bg} text-white p-2 rounded-full`}>
+                        <Icone className="w-5 h-5" />
                       </div>
                     </div>
 
-                    <CardHeader className="pb-1">
-                      <CardTitle className={`text-2xl font-bold ${colors.text}`}>
+                    <CardHeader className="pb-1 pt-4">
+                      <CardTitle className={`text-xl font-bold ${colors.text}`}>
                         {tech.titulo}
                       </CardTitle>
-                      <p className="text-sm text-slate-500 font-medium">{tech.subtitulo}</p>
+                      <p className="text-xs text-slate-500 font-medium">{tech.subtitulo}</p>
                     </CardHeader>
 
-                    <CardContent className="space-y-4">
-                      <p className="text-slate-600 text-sm">
-                        {tech.descricao}
-                      </p>
+                    <CardContent className="space-y-4 flex flex-col flex-1">
+                      <p className="text-slate-600 text-sm">{tech.descricao}</p>
 
-                      <div className={`${colors.light} rounded-lg p-4`}>
-                        <div className="flex items-center gap-2 mb-3">
-                          <Zap className={`w-5 h-5 ${colors.text}`} />
-                          <span className="font-semibold text-slate-900 text-sm">Especificações Técnicas</span>
+                      <div className={`${colors.light} rounded-lg p-3`}>
+                        <div className="flex items-center gap-2 mb-2">
+                          <Zap className={`w-4 h-4 ${colors.text}`} />
+                          <span className="font-semibold text-slate-900 text-xs">Especificações Técnicas</span>
                         </div>
-                        <ul className="space-y-2">
+                        <ul className="space-y-1.5">
                           {tech.especificacoes.map((spec, index) => (
-                              <li key={index} className="flex items-start gap-2 text-sm text-slate-700">
-                                <CheckCircle className={`w-4 h-4 ${colors.text} mt-0.5 flex-shrink-0`} />
+                              <li key={index} className="flex items-start gap-2 text-xs text-slate-700">
+                                <CheckCircle className={`w-3.5 h-3.5 ${colors.text} mt-0.5 shrink-0`} />
                                 <span>{spec}</span>
                               </li>
                           ))}
                         </ul>
                       </div>
 
-                      <div className="border-t border-slate-100 pt-4">
+                      <div className="border-t border-slate-100 pt-3 mt-auto">
                         <div className="flex items-start gap-2">
-                          <Shield className="w-4 h-4 text-slate-400 mt-0.5 flex-shrink-0" />
+                          <Shield className="w-3.5 h-3.5 text-slate-400 mt-0.5 shrink-0" />
                           <div>
-                            <span className="text-sm font-semibold text-slate-900">Aplicação:</span>
-                            <p className="text-sm text-slate-600 mt-1">{tech.aplicacao}</p>
+                            <span className="text-xs font-semibold text-slate-900">Aplicação:</span>
+                            <p className="text-xs text-slate-600 mt-0.5">{tech.aplicacao}</p>
                           </div>
                         </div>
                       </div>
@@ -173,34 +194,6 @@ export default function Tecnologias() {
                   </Card>
               );
             })}
-          </div>
-
-          {/* Integration Note */}
-          <div className="mt-12 bg-gradient-to-r from-slate-50 to-slate-100 rounded-2xl p-8 max-w-4xl mx-auto">
-            <div className="flex flex-col md:flex-row items-center gap-6">
-              <div className="flex-1">
-                <h3 className="text-xl font-bold text-slate-900 mb-3">
-                  Abordagem Multitecnológica
-                </h3>
-                <p className="text-slate-600">
-                  O programa combina fibra óptica com tótens Wi-Fi onde há infraestrutura terrestre,
-                  satélites LEO para áreas remotas sem cobertura, e SIM Cards LTE/4G para acesso
-                  individual de cidadãos vulneráveis — garantindo eficiência econômica, racionalidade
-                  técnica e inclusão social em todo o estado.
-                </p>
-              </div>
-              <div className="flex gap-4">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
-                  <Wifi className="w-8 h-8 text-green-600" />
-                </div>
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
-                  <Satellite className="w-8 h-8 text-purple-600" />
-                </div>
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
-                  <Radio className="w-8 h-8 text-blue-600" />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

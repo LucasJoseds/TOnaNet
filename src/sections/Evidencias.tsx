@@ -1,6 +1,6 @@
-import { FileText, Camera, ExternalLink, Download } from 'lucide-react';
+import { FileText, Download } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+
 import { Badge } from '@/components/ui/badge';
 
 const evidencias = [
@@ -54,38 +54,6 @@ const evidencias = [
       }
     ]
   },
-  {
-    categoria: 'Fotos e Vídeos',
-    icone: Camera,
-    cor: 'purple',
-    itens: [
-      {
-        titulo: 'Lançamento TO NA NET — Aldeia Krahô',
-        descricao: 'Registro fotográfico do lançamento do programa na aldeia Manoel Alves, Itacajá.',
-        referencia: 'Governo do Tocantins — 19/04/2023',
-        tipo: 'Fotografia'
-      },
-      {
-        titulo: 'Entrega das Torres no Jalapão',
-        descricao: 'Vídeo da entrega das primeiras torres nas comunidades quilombolas do Prata e Mumbuca.',
-        referencia: 'Secom/TO — 2024',
-        tipo: 'Vídeo'
-      },
-      {
-        titulo: 'Teste de Conexão com a Secretária',
-        descricao: 'Videoconferência do Governador com a Secretária Narúbia Werreria a 600km de distância.',
-        referencia: 'Divulgação — Jalapão',
-        tipo: 'Vídeo'
-      }
-    ]
-  }
-];
-
-const estatisticas = [
-  { valor: '89,1%', label: 'Escolas Estaduais Conectadas', fonte: 'ENEC/2026' },
-  { valor: '97,8%', label: 'Escolas Públicas com Internet', fonte: 'Censo Escolar/2025' },
-  { valor: '356 mil', label: 'Novos Moradores com 5G', fonte: 'Anatel/ATI-TO' },
-  { valor: '100%', label: 'do Tocantins liberado na faixa 3,5 GHz', fonte: 'Anatel — 5G' }
 ];
 
 export default function Evidencias() {
@@ -106,21 +74,9 @@ export default function Evidencias() {
             </p>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-            {estatisticas.map((stat, index) => (
-                <Card key={index} className="bg-white border-slate-200 text-center">
-                  <CardContent className="p-6">
-                    <div className="text-3xl font-bold text-blue-600 mb-1">{stat.valor}</div>
-                    <div className="text-sm text-slate-700 mb-1">{stat.label}</div>
-                    <div className="text-xs text-slate-400">{stat.fonte}</div>
-                  </CardContent>
-                </Card>
-            ))}
-          </div>
 
           {/* Evidence Categories */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {evidencias.map((categoria, catIndex) => {
               const Icone = categoria.icone;
               const cores: Record<string, { bg: string; text: string; border: string; badge: string }> = {
@@ -163,39 +119,6 @@ export default function Evidencias() {
                   </Card>
               );
             })}
-          </div>
-
-          {/* Links to Official Sources */}
-          <div className="mt-12 bg-white rounded-2xl border border-slate-200 p-8">
-            <h3 className="text-xl font-bold text-slate-900 mb-6 text-center">
-              Fontes Oficiais de Consulta
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <Button variant="outline" className="justify-between" asChild>
-                <a href="https://www.to.gov.br" target="_blank" rel="noopener noreferrer">
-                <span className="flex items-center gap-2">
-                  <ExternalLink className="w-4 h-4" />
-                  Portal do Governo TO
-                </span>
-                </a>
-              </Button>
-              <Button variant="outline" className="justify-between" asChild>
-                <a href="https://diariooficial.to.gov.br" target="_blank" rel="noopener noreferrer">
-                <span className="flex items-center gap-2">
-                  <FileText className="w-4 h-4" />
-                  Diário Oficial do TO
-                </span>
-                </a>
-              </Button>
-              <Button variant="outline" className="justify-between" asChild>
-                <a href="https://www.gov.br/mcom" target="_blank" rel="noopener noreferrer">
-                <span className="flex items-center gap-2">
-                  <ExternalLink className="w-4 h-4" />
-                  Ministério das Comunicações
-                </span>
-                </a>
-              </Button>
-            </div>
           </div>
         </div>
       </section>

@@ -87,6 +87,11 @@ export default function Hero() {
               <Wifi className="w-4 h-4 text-green-400" />
               <span className="text-white/90 text-xs sm:text-sm">Tótens Wi-Fi</span>
             </div>
+
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
+              <Radio className="w-4 h-4 text-purple-400" />
+              <span className="text-white/90 text-xs sm:text-sm">5G</span>
+            </div>
           </div>
 
           {/* CTA */}

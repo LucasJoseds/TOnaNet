@@ -1,4 +1,4 @@
-import { Calendar, Users, Target, MapPin } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 export default function Sobre() {
@@ -68,20 +68,17 @@ export default function Sobre() {
               </div>
             </div>
 
-            {/* Atual */}
             <div className="relative flex flex-col md:flex-row items-center">
               <div className="md:w-1/2 md:pr-8 md:text-right mb-4 md:mb-0">
                 <Card className="bg-white border-orange-100 shadow-lg hover:shadow-xl transition-shadow">
                   <CardContent className="p-6">
-                    <div className="flex items-center gap-2 text-orange-600 mb-2 md:justify-end">
+                    <div className="flex items-center gap-2 text-blue-600 mb-2 md:justify-end">
                       <Calendar className="w-5 h-5" />
-                      <span className="font-semibold">Em Execução</span>
+                      <span className="font-semibold">27 de Março</span>
                     </div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">Meta 612 Comunidades</h3>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">Publicação em Diário Oficial </h3>
                     <p className="text-slate-600">
-                      O programa segue em expansão com o objetivo de atingir 612 comunidades 
-                      tradicionais do Tocantins, incluindo aldeias indígenas, quilombos e 
-                      povoados rurais.
+                      Publicação em Diário Oficial da Ata de Registro de Preços para Satélites de baixa órbita (LEO).
                     </p>
                   </CardContent>
                 </Card>
@@ -89,49 +86,33 @@ export default function Sobre() {
               <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-orange-500 rounded-full border-4 border-white animate-pulse hidden md:block" />
               <div className="md:w-1/2 md:pl-8" />
             </div>
+
+            {/* Atual */}
+            <div className="relative flex flex-col md:flex-row items-center">
+              <div className="md:w-1/2 md:pr-8" />  {/* vazio à esquerda */}
+
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-orange-600 rounded-full border-4 border-white hidden md:block" />
+
+              <div className="md:w-1/2 md:pl-8 mb-4 md:mb-0">
+                <Card className="bg-white border-orange-100 shadow-lg hover:shadow-xl transition-shadow">
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-2 text-orange-600 mb-2">
+                      <Calendar className="w-5 h-5" />
+                      <span className="font-semibold">Em Execução</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">
+                      Meta 612 Comunidades
+                    </h3>
+                    <p className="text-slate-600">
+                      O programa segue em expansão com o objetivo de atingir 612 comunidades
+                      tradicionais do Tocantins, incluindo aldeias indígenas, quilombos e
+                      povoados rurais.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
           </div>
-        </div>
-
-        {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <Card className="bg-gradient-to-br from-blue-50 to-white border-blue-100">
-            <CardContent className="p-6 text-center">
-              <div className="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Target className="w-7 h-7 text-blue-600" />
-              </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-2">Objetivo</h3>
-              <p className="text-slate-600 text-sm">
-                Reduzir as lacunas de conectividade e promover a inclusão digital 
-                em comunidades tradicionais e áreas rurais do Tocantins.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-gradient-to-br from-green-50 to-white border-green-100">
-            <CardContent className="p-6 text-center">
-              <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-7 h-7 text-green-600" />
-              </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-2">Beneficiários</h3>
-              <p className="text-slate-600 text-sm">
-                Comunidades indígenas, quilombolas, povoados rurais e população 
-                de baixa renda em áreas sem cobertura de internet.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-gradient-to-br from-orange-50 to-white border-orange-100">
-            <CardContent className="p-6 text-center">
-              <div className="w-14 h-14 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin className="w-7 h-7 text-orange-600" />
-              </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-2">Cobertura</h3>
-              <p className="text-slate-600 text-sm">
-                Atuação em todos os 139 municípios do Tocantins, 
-                priorizando áreas remotas e sem infraestrutura.
-              </p>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>

@@ -5,7 +5,6 @@ import Tecnologias from './sections/Tecnologias';
 import Evidencias from './sections/Evidencias';
 import Materias from './sections/Materias';
 import Comunidades from './sections/Comunidades';
-import Footer from './sections/Footer';
 import './App.css';
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
               <Materias />
               <Comunidades />
           </main>
-          <Footer />
       </>
   );
 }
