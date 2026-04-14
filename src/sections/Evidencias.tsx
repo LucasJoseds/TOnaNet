@@ -30,7 +30,7 @@ const evidencias = [
     ]
   },
   {
-    categoria: 'Relatórios Oficiais',
+    categoria: 'Documentos Oficiais',
     icone: Download,
     cor: 'green',
     itens: [
@@ -47,10 +47,11 @@ const evidencias = [
         tipo: 'Estudo'
       },
       {
-        titulo: 'Estratégia Nacional de Escolas Conectadas — ENEC',
-        descricao: 'Dados atualizados de conectividade das escolas estaduais do Tocantins.',
-        referencia: 'MEC/INEP — 2025',
-        tipo: 'Dados Oficiais'
+        titulo: 'Publicação em Diário Oficial - Ata de Registro de Preço',
+        descricao: 'Pregão Eletrônico para registro de preços de serviço de telecomunicação via satélite\n' +
+            'de baixa órbita.',
+        referencia: 'DOE Nº 7.027 pag. 77',
+        tipo: 'Publicação'
       }
     ]
   },
@@ -70,7 +71,7 @@ export default function Evidencias() {
             </h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
               Documentação oficial que comprova a existência e implementação do programa
-              TO NA NET e outras políticas de conectividade do Estado do Tocantins.
+              TO na NET e outras políticas de conectividade do Estado do Tocantins.
             </p>
           </div>
 

@@ -34,7 +34,7 @@ export default function Hero() {
 
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
-            TO na <span className="text-blue-400">Net</span>
+            TO na <span className="text-blue-400">NET</span>
           </h1>
 
           {/* Subtitle */}

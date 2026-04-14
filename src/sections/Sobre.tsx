@@ -11,10 +11,10 @@ export default function Sobre() {
             Sobre o Programa
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            História do <span className="text-blue-600">TO na Net</span>
+            História do <span className="text-blue-600">TO na NET</span>
           </h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-            O programa TO na Net nasceu como uma iniciativa inovadora do Governo do Tocantins 
+            O programa TO na NET nasceu como uma iniciativa inovadora do Governo do Tocantins
             para reduzir as lacunas de conectividade e promover a inclusão digital no estado.
           </p>
         </div>

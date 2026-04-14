@@ -50,7 +50,7 @@ export default function Navigation() {
               {/* Grupo 1: Logos */}
               <div className="flex items-center gap-2">
                 <img src="/ati.png" alt="ATI" className="h-6 md:h-7 w-auto object-contain" />
-                <img src="/logo.png" alt="TO na Net" className="h-6 md:h-7 w-auto object-contain" />
+                <img src="/logo.png" alt="TO na NET" className="h-6 md:h-7 w-auto object-contain" />
               </div>
 
               {/* Grupo 2: Ícone + Texto */}
@@ -64,7 +64,7 @@ export default function Navigation() {
                 <span className={`text-xl font-bold transition-colors ${
                     isScrolled ? 'text-slate-900' : 'text-white'
                 }`}>
-      TO na <span className="text-blue-500">Net</span>
+      TO na <span className="text-blue-500">NET</span>
     </span>
               </div>
 

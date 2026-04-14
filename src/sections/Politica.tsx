@@ -8,7 +8,7 @@ const perguntasIndicador = [
     pergunta: 'Possui alguma política, programa, estrutura ou marco voltado para reduzir as lacunas de conectividade do Estado?',
     resposta: 'SIM',
     evidencias: [
-      'Programa TO NA NET — abordagem multitecnológica com 3 eixos complementares (Wi-Fi, Satélite LEO, LTE/4G)',
+      'Programa TO na NET — abordagem multitecnológica com 3 eixos complementares (Wi-Fi, Satélite LEO, LTE/4G)',
       'Projeto Tocantins Net — Rede de fibra óptica interligando 139 municípios',
       'Profe Digital — Conectividade nas escolas estaduais',
       'Política Estadual de Transformação para o Governo Digital (Decreto 6.757/2024)',
@@ -21,9 +21,9 @@ const perguntasIndicador = [
     pergunta: 'Possui um programa de acesso à internet para população de baixa renda?',
     resposta: 'SIM',
     evidencias: [
-      'TO NA NET Eixo 01 — Wi-Fi comunitário gratuito em 612 comunidades tradicionais via tótens e fibra óptica',
-      'TO NA NET Eixo 02 — Satélite LEO para comunidades indígenas e áreas rurais remotas sem infraestrutura terrestre',
-      'TO NA NET Eixo 03 — SIM Cards LTE (4G) individuais para cidadãos vulneráveis, com validação socioeconômica, territorial e tecnológica',
+      'TO na NET Eixo 01 — Wi-Fi comunitário gratuito em 612 comunidades tradicionais via tótens e fibra óptica',
+      'TO na NET Eixo 02 — Satélite LEO para comunidades indígenas e áreas rurais remotas sem infraestrutura terrestre',
+      'TO na NET Eixo 03 — SIM Cards LTE (4G) individuais para cidadãos vulneráveis, com validação socioeconômica, territorial e tecnológica',
       'Programa Brasil Antenado — Kits de parabólica digital para famílias de baixa renda',
       'Wi-Fi nas Escolas — Acesso gratuito na rede estadual de ensino'
     ]
@@ -52,7 +52,7 @@ const documentosComprobatorios = [
   {
     categoria: 'Contratos e Acordos',
     itens: [
-      'Edital de contratação de Satélite LEO — justificativa de universalização para áreas onde o mercado não chega (referência institucional TO NA NET Eixo 02)',
+      'Edital de contratação de Satélite LEO — justificativa de universalização para áreas onde o mercado não chega (referência institucional TO na NET Eixo 02)',
       'Parceria Público-Privada Tocantins Net (em modelagem)',
       'Acordos com operadoras para expansão do LTE/4G',
       'Termos de cooperação com o Ministério das Comunicações para expansão do 5G'
