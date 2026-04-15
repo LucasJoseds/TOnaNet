@@ -7,8 +7,7 @@ const navItems = [
   { label: 'Tecnologias', href: '#tecnologias' },
   { label: 'Evidências', href: '#evidencias' },
   { label: 'Matérias', href: '#materias' },
-  { label: 'Comunidades', href: '#comunidades' },
-  { label: 'Política', href: '#politica' }
+  { label: 'Comunidades', href: '#comunidades' }
 ];
 
 export default function Navigation() {
