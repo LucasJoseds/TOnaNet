@@ -73,7 +73,7 @@ export default function Materias() {
               Matérias e <span className="text-orange-600">Reportagens</span>
             </h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Acompanhe a cobertura jornalística sobre o programa TO na NET
+              Acompanhe a cobertura jornalística sobre o programa Tocantins Conectado
               e as iniciativas de conectividade do Governo do Tocantins.
             </p>
           </div>

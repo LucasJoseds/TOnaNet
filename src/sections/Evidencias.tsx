@@ -71,7 +71,7 @@ export default function Evidencias() {
             </h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
               Documentação oficial que comprova a existência e implementação do programa
-              TO na NET e outras políticas de conectividade do Estado do Tocantins.
+              Tocantins Conectado e outras políticas de conectividade do Estado do Tocantins.
             </p>
           </div>
 

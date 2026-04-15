@@ -11,10 +11,10 @@ export default function Sobre() {
             Sobre o Programa
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            História do <span className="text-blue-600">TO na NET</span>
+            História do <span className="text-blue-600">Tocantins Conectado</span>
           </h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-            O programa TO na NET nasceu como uma iniciativa inovadora do Governo do Tocantins
+            O programa Tocantins Conectado nasceu como uma iniciativa inovadora do Governo do Tocantins
             para reduzir as lacunas de conectividade e promover a inclusão digital no estado.
           </p>
         </div>
@@ -83,7 +83,7 @@ export default function Sobre() {
                   </CardContent>
                 </Card>
               </div>
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-orange-500 rounded-full border-4 border-white animate-pulse hidden md:block" />
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white animate-pulse hidden md:block" />
               <div className="md:w-1/2 md:pl-8" />
             </div>
 

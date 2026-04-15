@@ -12,13 +12,13 @@ export default function Hero() {
         {/* Background */}
         <div className="absolute inset-0">
           <img
-              src="/hero-bg.jpg"
+              src="/indios-img.png"
               alt=""
               aria-hidden="true"
               className="w-full h-full object-cover"
               style={{ objectPosition: 'center 30%' }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/80" />
         </div>
 
         {/* Content */}
@@ -34,7 +34,7 @@ export default function Hero() {
 
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
-            TO na <span className="text-blue-400">NET</span>
+            Tocantins <span className="text-blue-400">Conectado</span>
           </h1>
 
           {/* Subtitle */}

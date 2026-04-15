@@ -100,7 +100,7 @@ export default function Tecnologias() {
               Tecnologias do <span className="text-purple-600">Programa</span>
             </h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              O TO na NET adota uma abordagem multitecnológica, pois não existe uma única tecnologia
+              O Tocantins Conectado adota uma abordagem multitecnológica, pois não existe uma única tecnologia
               capaz de atender todo o território tocantinense. São quatro eixos complementares, cada um
               desenhado para um tipo específico de território e público.
             </p>
