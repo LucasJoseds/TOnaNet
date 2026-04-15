@@ -84,7 +84,7 @@ export default function Navigation() {
                   <span className={`hidden xs:inline sm:inline text-sm sm:text-base lg:text-xl font-bold transition-colors whitespace-nowrap ${
                       isScrolled ? 'text-slate-900' : 'text-white'
                   }`}>
-                  Tocantins Conectado
+                  Tocantins <span className="text-blue-600">Conectado</span>
                 </span>
                 </div>
               </button>
