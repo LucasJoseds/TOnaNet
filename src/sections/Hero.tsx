@@ -18,7 +18,7 @@ export default function Hero() {
               className="w-full h-full object-cover"
               style={{ objectPosition: 'center 30%' }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/80" />
         </div>
 
         {/* Content */}
@@ -34,7 +34,7 @@ export default function Hero() {
 
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
-            Tocantins <span className="text-blue-400">Conectado</span>
+            Tocantins <span className="text-white-600">Conectado</span>
           </h1>
 
           {/* Subtitle */}
@@ -51,7 +51,7 @@ export default function Hero() {
           {/* Stats */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 border border-white/20">
-              <div className="text-2xl sm:text-3xl font-bold text-blue-400 mb-1">612</div>
+              <div className="text-2xl sm:text-3xl font-bold text-white mb-1">612</div>
               <div className="text-white/80 text-xs sm:text-sm">Comunidades Beneficiadas</div>
             </div>
 

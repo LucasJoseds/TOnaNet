@@ -49,7 +49,7 @@ export default function Navigation() {
                   className={`flex items-center gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-xl transition-all ${
                       isScrolled
                           ? ''
-                          : 'bg-white/20 backdrop-blur-md border border-white/20'
+                          : 'bg-white/95 backdrop-blur-md shadow-lg py-3'
                   }`}
               >
                 <img
@@ -84,7 +84,7 @@ export default function Navigation() {
                   <span className={`hidden xs:inline sm:inline text-sm sm:text-base lg:text-xl font-bold transition-colors whitespace-nowrap ${
                       isScrolled ? 'text-slate-900' : 'text-white'
                   }`}>
-                  Tocantins <span className="text-blue-400">Conectado</span>
+                  Tocantins Conectado
                 </span>
                 </div>
               </button>
