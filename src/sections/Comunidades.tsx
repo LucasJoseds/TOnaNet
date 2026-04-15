@@ -46,7 +46,7 @@ export default function Comunidades() {
           {/* Main Image */}
           <div className="relative rounded-2xl overflow-hidden mb-16 max-w-4xl mx-auto">
             <img
-                src="/indios.jpeg"
+                src="/governador.jpg"
                 alt="Comunidade indígena beneficiada"
                 className="w-full h-auto object-cover"
             />

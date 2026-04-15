@@ -61,8 +61,8 @@ export default function Hero() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 border border-white/20">
-              <div className="text-2xl sm:text-3xl font-bold text-orange-400 mb-1">Até 130 Mbps</div>
-              <div className="text-white/80 text-xs sm:text-sm">Satélite LEO</div>
+              <div className="text-2xl sm:text-3xl font-bold text-orange-400 mb-1">47</div>
+              <div className="text-white/80 text-xs sm:text-sm">Pontos Turísticos</div>
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 border border-white/20">
