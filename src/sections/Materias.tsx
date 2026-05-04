@@ -5,6 +5,15 @@ import { Button } from '@/components/ui/button';
 
 const materias = [
   {
+    titulo: 'Governador Wanderlei Barbosa autoriza obras nas Dunas do Jalapão e leva internet à comunidade quilombola',
+    veiculo: 'ATI/TO',
+    data: '29/04/2026',
+    tipo: 'Notícia',
+    resumo: 'Com investimento superior a R$ 1,4 milhão, ação fortalece a infraestrutura turística nas Dunas do Jalapão, beneficiando comunidades, trabalhadores do turismo e visitantes.',
+    link: 'https://www.to.gov.br/ati/noticias/governador-wanderlei-barbosa-autoriza-obras-nas-dunas-do-jalapao-e-leva-internet-a-comunidade-quilombola-nesta-quinta-30/114z21vp349n ',
+    destaque: true
+  },
+  {
     titulo: 'Wanderlei é o 1º governador a levar acesso gratuito à internet para comunidades indígenas do Tocantins',
     veiculo: 'Conexão Tocantins',
     data: '20/04/2023',
@@ -58,6 +67,7 @@ const materias = [
     link: 'https://www.to.gov.br/secom/noticias/investimentos-do-governo-do-tocantins-em-tecnologia-elevam-conectividade-das-escolas-estaduais-para-891-acima-da-media-regional-e-nacional/1sg3id1x3mhl ',
     destaque: false
   }
+
 ];
 
 export default function Materias() {
@@ -79,7 +89,7 @@ export default function Materias() {
           </div>
 
           {/* Featured News */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
             {materias.filter(m => m.destaque).map((materia, index) => (
                 <Card key={index} className="border-2 border-orange-200 bg-gradient-to-br from-orange-50 to-white overflow-hidden">
                   <CardHeader className="pb-2">
